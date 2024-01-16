@@ -286,8 +286,19 @@
         width: 300px;
         margin-top: -473px;
     }
+    .price-main{
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center;
+    }
 }
-
+@media screen and (min-width:746) and (max-width:992px) {
+    .ser-1{
+        display: flex;
+        flex-direction: column;
+    }
+    
+}
 /* @media screen and ( min-width:746px) and (max-width:1100px) {
     .ser-1{
         display: flex;
@@ -378,32 +389,27 @@ font-size: 20px;
     background-color: blue !important;
 
 }
-
-@media screen and (min-width:746px) and (max-width:992px) {
+@media screen and (max-width:746px) {
     .price{
         flex-direction: column;
-    justify-content: center;
-    align-items: center;
+        align-items: center;
+    }
+    
+}
+@media screen and (min-width:746) and (max-width:992px) {
+
+    
 }
 
+
 .card-width{
-width: 500px;
+/* width: 500px; */
     margin-top: 15px;
 }
     
 }
 
-@media screen and (min-width:746) and (max-width:992)  {
-    .price{
-        flex-direction: column;
-        justify-content: center;
-        align-items: center
-    }
-    .card-width{
-        width: 500px !important;
-    }
-    
-}
+
 /* prices */
 
 /* contact */
