@@ -1,3 +1,31 @@
+.custom-shape-divider-top-1705324980 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-top-1705324980 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 153px;
+}
+
+.custom-shape-divider-top-1705324980 .shape-fill {
+    fill: #222427fc ;
+}
+/* header */
+/* css texture */
+.pattern2 {
+    background-image: repeating-linear-gradient(-45deg, rgb(254, 254, 254), rgba(255,255,255, 0.25) 1px, transparent 1px, transparent 6px);
+    background-size: 4px 4px;
+}
+/* css texture */
+
+/* .Navagation */
 .Navagation{
     position: absolute;
     right: 0;
@@ -8,7 +36,7 @@
     font-weight: 600;
 }
 .nav-height{
-    height: 70px;
+    height: 600px;
     position: fixed;
     width: 100%;
     z-index: 1;
@@ -16,6 +44,10 @@
 .nav-item{
     margin-left: 35px;
     
+}
+.main-fluid{
+    position: absolute;
+    top: 0;
 }
 @media screen and (max-width:746px) {
     .Navagation{
@@ -26,20 +58,24 @@
     
     }
     .main-fluid{
-        background-color:#222427fc;
+        position: absolute;
+        top: 9px;
     }
+   
+
+   
 }
 
 /* background */
-.circle-main{
+/* .circle-main{
 
-}
+} */
 .circle{
     margin-top: 170px;
     /* margin-left: 29pc; */
     width: 300px;
     height: 300px;
-    background: #000;
+    background: #0000008c;
     border-radius: 50%;
     box-shadow: 2px 2px 48px black;
 }
@@ -51,13 +87,17 @@
     background-size: cover;
     /* margin-top: -6pc; */
     width: 100%;
-    top: 0px;}
+    position: absolute;
+    z-index: -1;
+    top: 0; 
+
+}
    
 .picture{
     margin-top: 17pc;
 }
 .my-img{
-    width: 250px;
+    width: 340px;
     margin-top: -35pc;
     /* position: absolute;
     top: 30px; */
@@ -65,7 +105,7 @@
 }
 @media screen and (max-width:746px) {
    .image{
-    margin-top: -39px;
+    margin-top: -79px;
    }
     .my-img{
         position: static;
@@ -77,13 +117,14 @@
     /* margin-left: 29pc; */
     width: 300px;
     height: 300px;
-    background: #000;
+    background: #0000008c;
     border-radius: 50%;
     box-shadow: 2px 2px 48px black;
+
     }
  
 }
-@media screen and (min-width:746px) and (max-width:1100px) {
+@media screen and (min-width:746px) and (max-width:992px) {
     .background{
         display: flex;
         flex-direction: column;
@@ -91,20 +132,31 @@
         justify-content: center;
     }
     .image{
-        margin-top: -236px
+        margin-top: -463px;
     }
     .my-img{
         width: 300px ;
-        margin-top: -397px;
+        margin-top: -89px;
     }
   
     .navbar-toggler-icon {
         background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
     }
     
+ 
+    
     
 }
-@media screen and (min-width:768) and (max-width:768) {
+
+
+@media screen and (min-width:992) and (max-width:1100) {
+    .bg-height{
+        height: 40vh !important;
+    }
+    
+}
+
+@media screen and (min-width:768) and (max-width:992) {
     .navbar-nav{
         position: relative;
         left: -671px;
@@ -118,7 +170,22 @@
         align-items: center;
         
     }
-}
+    .circle{
+        margin-top: -33px !important;
+    /* margin-left: 29pc; */
+    width: 300px;
+    height: 300px;
+    background: #0000008c;
+    border-radius: 50%;
+    box-shadow: 2px 2px 48px black;
+
+    }
+ 
+        
+    
+
+    }
+
 
 /* .bg-text{
     position: relative;
@@ -181,7 +248,20 @@
     .prog-heading{
         text-align: center;
     }
-}
+
+    }
+
+    @media screen and (min-width:746px) and (max-width:992px) {
+     
+        .about{
+            flex-direction: column;
+            height: 813px !important;
+        }   
+     
+        
+        
+    }
+
 /* about */
 
 /* sevice */
@@ -299,15 +379,29 @@ font-size: 20px;
 
 }
 
-@media screen and (max-width:746px) {
+@media screen and (min-width:746px) and (max-width:992px) {
     .price{
         flex-direction: column;
     justify-content: center;
     align-items: center;
 }
+
 .card-width{
+width: 500px;
     margin-top: 15px;
 }
+    
+}
+
+@media screen and (min-width:746) and (max-width:992)  {
+    .price{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center
+    }
+    .card-width{
+        width: 500px !important;
+    }
     
 }
 /* prices */
